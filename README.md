@@ -1,3 +1,5 @@
+<img src="https://techprep.org/wp-content/uploads/2015/09/stackoverflow-logo.png">
+
 ## StackOverflow-Tag-prediction
 Problem: Given the Title and body of a question on Stack overflow, predict the tags associated with the question.
 
@@ -9,3 +11,4 @@ Stack Overflow is something which every programmer use one way or another. Each 
 ### Data Source: https://data.stackexchange.com/stackoverflow/query/edit/1186275#resultSets
 ##### Query: SELECT TOP 5000 Id, Title, Body , Tags from Posts WHERE Title IS NOT NULL AND Body IS NOT NULL ORDER BY RAND()
 <img src="img/1.PNG">
+
