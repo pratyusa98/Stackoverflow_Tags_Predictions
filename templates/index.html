@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Tag Predictor</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100 w-100" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl3L4sjmsywy-yPgsOh2MpE-VPLYdteQgsMw&usqp=CAU');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-size: cover;">
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container mt-3" style="color:white;font-weight: bold">
+    <h2><center>Stack-Overflow Tag Predictor </center></h2>
+<p><center>* This is the tag predictor by providing the question like stack overflow</center></p>
+  </div>
+
+       <div class="container">
+<form action="/predict" method="post">
+  <center><h5 style="color:white;font-weight: bold"> Please enter a Title And Content of a Question here </h5></center>
+  <br>
+
+    <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputEmail1" name="Qtitle" aria-describedby="emailHelp" placeholder="Enter Title Of your Question">
+  </div>
+
+
+  <div class="form-group">
+    <textarea class="form-control p-4" id="exampleFormControlTextarea1"  rows="8" cols="50" wrap="hard" name="Qbody" placeholder="Body of the question"></textarea>
+  </div>
+
+    <div class="form-row">
+        <input type="submit" value="Predict" class="btn btn-success">
+                </div>
+
+</form>
+
+<h5><span id='prediction_text' style="color:white;font-weight: bold">{{ desc }}</span>
+<span id='' style="color:white;font-weight: bold">
+  {{ prediction_text }}
+</span></h5>
+
+</div> <br><br>
+
+
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">© Copyright By <a href="https://github.com/pratyusa98"> Pratyusa Dwibedy </a>.2021</span>
+  </div>
+</footer>
+
+  </body>
+</html>
