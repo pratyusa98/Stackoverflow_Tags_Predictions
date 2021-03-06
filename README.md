@@ -14,3 +14,6 @@ Stack Overflow is something which every programmer use one way or another. Each 
 
 
 #### Due To Large File Size i am unable to load vectorizer1.pkl,tag_predictor_model.pkl but if you can run ipynb file the it will be generate on your system.
+
+#### Output
+<img src="img/2.PNG">
