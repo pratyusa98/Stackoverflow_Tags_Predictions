@@ -12,3 +12,5 @@ Stack Overflow is something which every programmer use one way or another. Each 
 ##### Query: SELECT TOP 5000 Id, Title, Body , Tags from Posts WHERE Title IS NOT NULL AND Body IS NOT NULL ORDER BY RAND()
 <img src="img/1.PNG">
 
+
+#### Due To Large File Size i am unable to load vectorizer1.pkl,tag_predictor_model.pkl but if you can run ipynb file the it will be generate on your system.
